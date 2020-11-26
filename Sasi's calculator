@@ -1,0 +1,33 @@
+num1 = int(input("enter a number: "))
+sign = input("please enter the sign: ")
+num2 = int(input("enter a second number: "))
+
+if sign == "+" or sign == "-" or sign == "/" or sign == "*" or sign == "%":
+  print("You programmed to calculate %s%s%s." %(num1,sign,num2))
+
+else:
+  print(f'How can you calculate {num1} and {num2} with the operator {sign}.')
+
+if sign == "+":
+  result = num1 + num2
+  print("The result is %s." % (result))
+      
+elif sign == "-":
+  result = num1 - num2
+  print("The result is %s." % (result))
+        
+elif sign == "*":
+  result = num1 * num2
+  print("The result is %s." % (result))
+	
+elif sign == "/":
+	result = num1 / num2
+	print("The result is %s." % (result))
+	
+elif sign == "**":
+	result = num1**num2
+	print("The result is %s." % (result))
+
+elif sign == "%":
+	result = num1 % num2
+	print("The result is %s." % (result))
